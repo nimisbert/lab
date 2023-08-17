@@ -1,0 +1,42 @@
+cabal-version:      2.4
+name:               quadraticsAndCubics
+version:            0.1.0.0
+
+library
+      hs-source-dirs: 
+            lib
+      exposed-modules: 
+            Plot
+            Polynomials
+      other-modules:
+            Exe11
+            Exe12
+      build-depends: 
+              base ^>=4.16.4.0
+            , gloss
+            , linear
+
+executable testPlot
+      hs-source-dirs:   
+            app
+      main-is:          
+            testPlot.hs
+      build-depends:    
+              base ^>=4.16.4.0
+            , quadraticsAndCubics
+            , gloss
+            , linear
+      default-language: 
+            Haskell2010
+
+executable cubicPlot
+      hs-source-dirs:
+            app
+      main-is:
+            cubicPlot.hs
+      build-depends:
+              base ^>=4.16.4.0
+            , quadraticsAndCubics
+            , gloss
+      default-language:
+            Haskell2010
