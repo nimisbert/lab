@@ -22,10 +22,16 @@ computeRoots (Quadratic a b c)
   | otherwise  = Nothing
   where 
     delta = b^2 - 4*a*c
-    x0 = (-b - sqrt( delta )) / (2*a)
-    x1 = (-b + sqrt( delta )) / (2*a)
+    x0 = (-b - sqrt delta ) / (2*a)
+    x1 = (-b + sqrt delta ) / (2*a)
+computeRoots (QuadraticSquareComplement p q r)
+  | (- r)/p > 0 = return (x0, x1)
+  | otherwise   = Nothing 
+  where 
+    x0 = -q - sqrt ((-r)/p)
+    x1 = -q + sqrt ((-r)/p)
 
 completingTheSquare :: BasicPolynomial -> BasicPolynomial
 completingTheSquare (Quadratic a b c) = 
   let q = b / (2*a) in 
-  QuadraticSquareComplement a q (c - q^2)
+  QuadraticSquareComplement a q (c - (a*(q^2)))
