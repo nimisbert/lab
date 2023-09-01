@@ -12,7 +12,6 @@ main = display window black . scale 20 20 . pictures $ [
     , color green a1c
     ]
 
-
 window ::  Display
 window = InWindow "Exercice 3.1 q1" (800, 600) (20, 20)
 
@@ -24,7 +23,6 @@ a1b = plotFunction (computePolynomial q1b) [-10.0, -9.9 .. 10.0]
 
 a1c :: Picture
 a1c = plotFunction (computePolynomial q1c) [-10.0, -9.9 .. 10.0]
-
 
 plotFunction :: (Float -> Float) -> [Float] -> Picture
 plotFunction f x = pictures $ map Line datapoints
