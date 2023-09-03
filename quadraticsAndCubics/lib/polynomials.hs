@@ -1,6 +1,7 @@
 module Polynomials (
-    BasicPolynomial(..)
-
+      BasicPolynomial(..)
+    , apply
+    , getRoots
 ) where
 import Data.Maybe ( fromMaybe )
 

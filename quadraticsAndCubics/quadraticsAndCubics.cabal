@@ -6,7 +6,6 @@ library
       hs-source-dirs: 
             lib
       exposed-modules: 
-            Exe31
             Polynomials
       other-modules:
       build-depends: 
@@ -14,11 +13,11 @@ library
             , gloss
             , linear
 
-executable plotExe31
+executable plots
       hs-source-dirs:   
             app
       main-is:          
-            plotExe31.hs
+            plots.hs
       build-depends:    
               base ^>=4.16.4.0
             , quadraticsAndCubics
