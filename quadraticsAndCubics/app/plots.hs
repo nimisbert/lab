@@ -1,6 +1,6 @@
 module Main where 
 import Graphics.Gloss
-import Polynomials
+import Polynomials 
 
 main :: IO()
 main = display window black . scale 20 20 . pictures $ [
@@ -16,14 +16,14 @@ main = display window black . scale 20 20 . pictures $ [
     , color blue  $ Translate 0 q2cyIntercept $ Scale 0.009 0.009 $ Text (show q2cyIntercept)
     ]
 
--- A-Level, CGG, chapter 3, Exercice 3.1, Question 2b 
-q2b = Quadratic 1 (-10) 9
+-- A-Level, CGP, chapter 3, Exercice 3.1, Question 2b 
+q2b = Polynomial [1, -10, 9]
 q2bPlot  = plotFunction (apply q2b) [-20.0, -19.9 .. 20.0]
 q2bRoot0 = Translate (head $ getRoots q2b) 0 (ThickCircle 0.1 0.2)
 q2bRoot1 = Translate (last $ getRoots q2b) 0 (ThickCircle 0.1 0.2)
 q2byIntercept = apply q2b 0
 
-q2c = Quadratic (-1) 10 (-9)
+q2c = Polynomial [-1, 10, -9]
 q2cPlot = plotFunction (apply q2c) [-20.0, -19.9 .. 20.0]
 q2cyIntercept = apply q2c 0
 
