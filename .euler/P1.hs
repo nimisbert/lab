@@ -4,6 +4,8 @@
 -- Sum of n : n*(n+1) / 2
 -- Multiples of 3 and 5 : 15*(1+2+3+...)
 
+module P1 ( sumOfn ) where 
+
 sumOfn :: Int -> Int 
 sumOfn n = n*(n+1) `div` 2
 
