@@ -1,4 +1,5 @@
 -- What is the value of the first triangle number to have over 500 divisors ? 
+module P12 ( divisorsOfn ) where 
 
 import Data.List (sort, group)
 
