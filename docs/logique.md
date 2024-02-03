@@ -66,16 +66,16 @@
 >   $\forall x \in \mathbb{R}, x^2 \geq 0$
 #### Il existe 
 > In existe $x$ un élément de $A$ pour lequel le prédicat $P(x)$ est vrai. <br>
-> $\exist x \in A, P(x)$
+> $\exists x \in A, P(x)$
 #### Tel que 
 > $ \exists x \in A, P(x) $ <br>
 > $ \exists x \in A; P(x) $ <br>
 > $ \exists x \in A| P(x) $ <br>
 #### Il existe un unique
 > Il existe un unique élément de $A$ pour lequel le prédicat $P(x)$ est vrai. <br>
-> $\exist ! x \in A, P(x)$
+> $\exists ! x \in A, P(x)$
 > - La définition d'une fonction bijective <br>
->   $\forall y \in \mathbb{R}, \exist ! x \in A | y = f(x)$
+>   $\forall y \in \mathbb{R}, \exists ! x \in A | y = f(x)$
 #### Négation avec quantificateurs
 > $\neg [\forall x \in A| P(x)]$ $\equiv$ $[\exists x\in A|\neg P(x)]$ <br>
 > $\neg [\exists x \in A| P(x)]$ $\equiv$ $[\forall x\in A|\neg P(x)]$ <br>
