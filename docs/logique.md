@@ -46,7 +46,7 @@
 >   - $x \le 3 \implies x > 1$, P implique Q est Vrai
 >   - $x \le 3 \implies x \le 1$, P implique Q est Vrai
 #### Equivalence de l'implication logique
-> $ P \implies Q \equiv \neg P \lor Q$
+> $P \implies Q \equiv \neg P \lor Q$
 #### La contraposée
 > La contraposée de $P \implies Q$ est $\neg Q \implies \neg P$ 
 > <br> de plus: $P \implies Q \equiv \neg Q \implies \neg P$
@@ -63,25 +63,25 @@
 > Quel que soit $x$ appartenant à $A$, le prédicat $P(x)$ est vrai. <br>
 > $\forall x \in A, P(x)$
 > - Le carré d'un réel est toujours positif ou nul:<br>
->   $\forall x \in \reals, x^2 \geq 0$
+>   $\forall x \in \mathbb{R}, x^2 \geq 0$
 #### Il existe 
 > In existe $x$ un élément de $A$ pour lequel le prédicat $P(x)$ est vrai. <br>
 > $\exist x \in A, P(x)$
 #### Tel que 
-> $\exist x \in A, P(x)$ <br>
-> $\exist x \in A; P(x)$ <br>
-> $\exist x \in A| P(x)$ <br>
+> $ \exists x \in A, P(x) $ <br>
+> $ \exists x \in A; P(x) $ <br>
+> $ \exists x \in A| P(x) $ <br>
 #### Il existe un unique
 > Il existe un unique élément de $A$ pour lequel le prédicat $P(x)$ est vrai. <br>
-> $\exist! x \in A, P(x)$
+> $\exist ! x \in A, P(x)$
 > - La définition d'une fonction bijective <br>
->   $\forall y \in \reals, \exist! x \in A | y = f(x)$
+>   $\forall y \in \mathbb{R}, \exist ! x \in A | y = f(x)$
 #### Négation avec quantificateurs
 > $\neg [\forall x \in A| P(x)]$ $\equiv$ $[\exists x\in A|\neg P(x)]$ <br>
 > $\neg [\exists x \in A| P(x)]$ $\equiv$ $[\forall x\in A|\neg P(x)]$ <br>
 > Exemple avec l'énoncé d'une suite 
-> - majorée : $\exists M \in \reals, \forall n \in \mathbb{N}| u_n \leq M$ <br>
-> - non majorée : $\forall M \in \reals, \exists n \in \mathbb{N}| u_n > M$
+> - majorée : $\exists M \in \mathbb{R}, \forall n \in \mathbb{N}| u_n \leq M$ <br>
+> - non majorée : $\forall M \in \mathbb{R}, \exists n \in \mathbb{N}| u_n > M$
 #### Dépendances de quantificateurs
 > Lorsque y dépends de x dans un énoncé comme : <br>
 > $\forall x \in A, \exists y \in B | P(x, y)$ <br>
