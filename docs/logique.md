@@ -68,9 +68,9 @@
 > In existe $x$ un élément de $A$ pour lequel le prédicat $P(x)$ est vrai. <br>
 > $\exists x \in A, P(x)$
 #### Tel que 
-> $ \exists x \in A, P(x) $ <br>
-> $ \exists x \in A; P(x) $ <br>
-> $ \exists x \in A| P(x) $ <br>
+> $\exists x \in A, P(x)$ <br>
+> $\exists x \in A; P(x)$ <br>
+> $\exists x \in A| P(x)$ <br>
 #### Il existe un unique
 > Il existe un unique élément de $A$ pour lequel le prédicat $P(x)$ est vrai. <br>
 > $\exists ! x \in A, P(x)$
