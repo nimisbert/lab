@@ -16,3 +16,18 @@ executable P1
     build-depends:    base ^>=4.16.4.0, logique
     hs-source-dirs:   app
     default-language: Haskell2010
+executable P2
+    main-is:          P2.hs
+    build-depends:    base ^>=4.16.4.0, logique
+    hs-source-dirs:   app
+    default-language: Haskell2010
+executable P3
+    main-is:          P3.hs
+    build-depends:    base ^>=4.16.4.0, logique
+    hs-source-dirs:   app
+    default-language: Haskell2010
+executable P4
+    main-is:          P4.hs
+    build-depends:    base ^>=4.16.4.0, logique
+    hs-source-dirs:   app
+    default-language: Haskell2010
