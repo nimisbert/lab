@@ -1,7 +1,7 @@
 # mathematics
 Mathematiques en Haskell et notes de cours en markdown.
 
-1. [La Logique Mathématique](./docs/logique.md)
+1. [La Logique Mathématique](./mathematics/docs/logique.md)
 2. [Le raisonnement](./docs/raisonnements.md)
     * [P1](./src/logique/app/P1.hs) : $\neg(A \lor B) \Longleftrightarrow \neg A \land \neg B$
     * [P2](./src/logique/app/P2.hs) : $\neg(A \land B) \Longleftrightarrow \neg A \lor \neg B$
