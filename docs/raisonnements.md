@@ -45,6 +45,7 @@
 > - Démontrer que $Q \implies P$ (réciproque)
 > - Conclure que $P \Longleftrightarrow Q$
 #### Récurrence 
+> ___
 > __Théorème__ <br>
 > $P(n)$ prédicat sur un $n \in \mathbb{N}$. Soit $n_0 \in \mathbb{N}$. Si :<br>
 > Initialisation: $P(n_0)$ vrai. <br>
@@ -90,7 +91,7 @@
 >           - $n+1$ se décompose en produit de facteurs premiers.<br>
 >       - cas 2 : $n+1$ n'est pas premier 
 >           - $\exists a\in \mathbb{N},\exists b\in \mathbb{N}|n=ab$
->           - $(a<n+1) \land (b<n+1)$, car $P(a)$ et $P(b)$ supposés vrai.
+>           - $(a < n+1) \land (b < n+1)$, car $P(a)$ et $P(b)$ supposés vrai.
 >           - Le produit de facteurs premiers est premier
 >           - Donc, $P(n+1)$ est premier.
 > - Conclusion
