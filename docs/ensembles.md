@@ -5,10 +5,10 @@
 > Une collection d'objets appellés éléments, noté par une lettre majuscule. (informel)<br>
 > - Un Ensemble: $E = \{1,2,4\}$ <br>
 > - Tiers exclu: $1 \in E$, $3 \notin E$ <br>
-> - L'Ensemble vide : $\emptyset = \{\}$ <br>
+> - L'Ensemble vide : $\emptyset = \{ \}$ <br>
 > 
 > Trois méthode de définition:
-> - Extension: $E={1,2,3}$
+> - Extension: $E=\{1,2,3\}$
 > - Graphique: Venn
 > - Compréhension: $E=\{n\in \mathbb{N}|1\leq n \leq 3\}$
 #### Le Cardinal
@@ -18,7 +18,6 @@
 > - $Card(\{ 1, 2, 4 \}) = 3$ 
 > - Singleton: $Card(X) = 1$ 
 > - Paire: $P = \{a,b\} = \{b,a\}; Card(P)=2$
-
 ### Relation entre les Ensembles
 #### L'égalité
 > Deux ensembles sont égaux si ils ont exactements les même éléments. <br>
