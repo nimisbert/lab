@@ -9,3 +9,4 @@ Mathematiques en Haskell et notes de cours en markdown.
     * [P4](./src/logique/app/P4.hs) _M.Hindry_, 4, p6
 3. [Les Ensembles](./docs/ensembles.md)
     * [P1](./src/ensembles/app/P1.hs) _A.Frécon_, 1.11.1, p36
+4. [Les Applications](./docs/applications)
