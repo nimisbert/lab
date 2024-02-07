@@ -11,13 +11,11 @@
 > Pour une fonction $(E,F,\Gamma)$ soit pour un $x \in E$ si il existe $y \in F$ :<br>
 > - $y$ est l'image de $x$ noté $f(x)$ <br>
 >   $x$ est l'antécédant de $y$ <br>
-> - $f: E \rightarrow F \\ x \rightarrow y = f(x)$
+> - $f: E \rightarrow F$ <br> $x \rightarrow y = f(x)$
 > 
 > L'ensemble de définition $D_f$ est l'ensemble des $x$ ayant une image dans $F$. <br>
 >
 > $f$ une fonction de $E$ dans $F$ si $E=D_f$, alors $f$ est une application.
->
-> L'ensemble des applications de $E$ dans $F$: $\mathcal{F}(E,F)$ 
 > 
 > Deux applications sont égales si:
 > - même ensemble de départ
@@ -25,7 +23,7 @@
 > - même graphe
 > 
 > L'application identité:
-> - $Id_E: E \rightarrow F \\ x \rightarrow x$
+> - $Id_E: E \rightarrow F$ <br> $x \rightarrow x$
 >
 > La fonction: Tout élément de l'ensemble de départ à au plus une image.
 >  
@@ -44,7 +42,7 @@
 #### La composition 
 > Soit $f: E \rightarrow G$ et $g: G \rightarrow F$,
 > la composée de $f$ et $g$:<br>
-> - $f \circ g: E \rightarrow G \\ x \rightarrow g(f(x))$ 
+> - $f \circ g: E \rightarrow G$ <br> $x \rightarrow g(f(x))$ 
 > ___
 > _Proposition_
 > - $f: E \rightarrow F$
@@ -86,3 +84,27 @@
 #### Le prolongement
 > Une application $f:E \rightarrow F$ et $E \subset E'$. <br>
 > $g: E' \rightarrow F$ est un prolongement de $f$ à $E'$ si $g_{|E} = f$.
+### Ensemble des applications
+> L'ensemble des applications de $E$ dans $F$: $\mathcal{F}(E,F)=F^E$ <br>
+> ___
+> _Propositions_ <br>
+> Dans le cas ou $E$ et $F$ des ensembles finis:
+> - $Card(F^E) = Card(F)^{Card(E)}$
+> - $f: E\not= \emptyset \rightarrow F$, n'existe pas 
+> - $\emptyset^E=\emptyset$
+> - $Card(\emptyset^E)=0^{Card(E)}=0$
+> - $f: E=\emptyset \rightarrow F (quelconque)$, existe
+> - $F^\emptyset = \{\emptyset_F\}$, application vide
+> - $Card(F^\emptyset) = Card(F)^0 = 1$
+### Les Applications 
+#### Injectives
+> $f:E \rightarrow F$, une application injective si tout élément de $F$ possède au plus un antécédent dans $E$.
+> - $\exists x,x' \in E, x\not= x' \implies f(x) \not= f(x')$
+> - $\forall x,x' \in E, f(x) = f(x') \implies x = x'$
+> ___
+> _Propositions_  <br>
+> La composé de deux application injectives est injective. <br>
+> 
+> Si $g \circ f$ est injective alors $f$ est injective. <br>
+> 
+>
