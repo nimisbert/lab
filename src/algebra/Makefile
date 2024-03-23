@@ -1,12 +1,13 @@
 # Compilateur
 FORTRAN = gfortran
 FFLAGS  = 
-# Repertoires
-WORKDIR = 
 # Compilation
-%: %.f90
-	$(FORTRAN) $^ -o $@
+%.o: %.f90 $(DEPS)
+	$(FORTRAN) -c -o $@ $< $(FFLAGS)
+
+cgse_multiples_factors: cgse_multiples_factors.o algebra.o 
+	$(FORTRAN) -o cgse_multiples_factors.out cgse_multiples_factors.o algebra.o 
 
 .PHONY: clean 
 clean: 
-	rm *.out
+	rm *.out *.o *.mod
