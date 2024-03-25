@@ -2,10 +2,10 @@ module algebra
     implicit none 
     private
 
-    public :: gcd     ! --- Greatest Common Divisor
-    public :: lcm     ! --- Least Common Multiple
-    public :: factors ! --- Factors of a number
-
+    public :: gcd       ! --- Greatest Common Divisor
+    public :: lcm       ! --- Least Common Multiple
+    public :: factors   ! --- Factors of a number
+    
     contains
     
     function gcd( a, b )
@@ -54,7 +54,6 @@ module algebra
             end if factor
             i = i + 1
         end do 
-        
     end subroutine factors
 
 end module algebra
