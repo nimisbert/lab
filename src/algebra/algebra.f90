@@ -1,3 +1,5 @@
+! --- Author : Nicolas Misbert
+! --- Date   : 26 Mars 2024
 module algebra
     implicit none 
     private

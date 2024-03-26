@@ -1,13 +1,25 @@
-# Compilateur
-FORTRAN = gfortran
-FFLAGS  = 
-# Compilation
-%.o: %.f90 $(DEPS)
-	$(FORTRAN) -c -o $@ $< $(FFLAGS)
+# Author : Nicolas Kielbasiewics
+# Date   : 3 Mars 2009
+# Source : ENSTA, Paris
+FC = gfortran 
+FFLAGS = 
+LDFLAGS =
 
-cgse_multiples_factors: cgse_multiples_factors.o algebra.o 
-	$(FORTRAN) -o cgse_multiples_factors.out cgse_multiples_factors.o algebra.o 
+SRCS = cgse_calculations.f90 \
+	   cgse_multiples_factors.f90
 
-.PHONY: clean 
-clean: 
-	rm *.out *.o *.mod
+OBJS = $(SRCS:.f90=.o)
+EXEC = $(SRCS:.f90=)
+
+all: $(EXEC)
+
+%.o: %.f90
+	$(FC) $(FFLAGS) -c $< 
+
+%: %.o 
+	$(FC) $(LDFLAGS) -o $@ $^
+
+cgse_multiples_factors: algebra.o
+
+clean:
+	rm -rf *.o *.mod *.out $(OBJS) $(EXEC)
