@@ -1,4 +1,6 @@
-! --- CGSE, Algebra exercises, 1.1 - Caclulations
+! Author : Nicolas Misbert
+! Date   : 2024/03/28
+! Source : CGSE, Algebra exercises, 1.1 - Caclulations
 program main
     implicit none
     ! --- Exercise 1, page 2 : BODMAS

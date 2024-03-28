@@ -1,10 +1,12 @@
-
-! --- CGSE, Algebra exercises, 1.2 - Multiples and Factors
+! Author : Nicolas Misbert
+! Date   : 2024/03/28
+! Source : CGSE, Algebra exercises, 1.2 - Multiples and Factors
 program cgse_multiples_factors
     use algebra
     implicit none 
     integer :: i, n
-    integer, dimension(100) :: m
+    integer, dimension(64) :: m
+    
     ! --- Exercise 1, page 6 : Multiples
     print *,"Exercise 1.1.a) ", [(i*9, i=1,5)]
     print *,"Exercise 1.1.b) ", [(i*13, i=1,5)]
@@ -71,7 +73,28 @@ program cgse_multiples_factors
     print *,"Exercise 2.2.d) ", 1, 10
     print *,"Exercise 2.3  ) ", 3
     print *,"Exercise 2.4  ) ", 1
-
+    call factors( 15, m, n )
+    print *,"Exercise 2.5.a) ", m(1:n), " (i)"
+    call factors( 21, m, n )
+    print *,"Exercise 2.5.a) ", m(1:n), " (ii)"
+    print *,"Exercise 2.5.b) ", 1, 3
+    print *,"Exercise 2.6.a) "
+    call factors( 15, m, n )
+    print *, m(1:n)
+    call factors( 20, m, n )
+    print *, m(1:n)
+    print *, 1, 5
+    print *, "Exercise 2.6.b) "
+    call factors( 12, m, n )
+    print *, m(1:n)
+    print *, 1, 3
+    print *, "Exercise 2.6.c) "
+    call factors( 30, m, n )
+    print *, m(1:n)
+    call factors( 45, m, n )
+    print *, m(1:n)
+    print *, 1, 3, 5, 10, 15 
+    
     contains
 
     subroutine multiples_of_p( p, lb, ub, m, n )
@@ -94,7 +117,5 @@ program cgse_multiples_factors
             m = [(i,i=pfirst,plast,p)]
         end if 
     end subroutine multiples_of_p
-
-    
 
 end program cgse_multiples_factors

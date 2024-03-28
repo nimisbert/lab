@@ -1,6 +1,7 @@
-# Author : Nicolas Kielbasiewics
+# Author : Nicolas Misbert
 # Date   : 3 Mars 2009
 # Source : ENSTA, Paris
+#	Nicolas Kielbasiewics
 FC = gfortran 
 FFLAGS = 
 LDFLAGS =
