@@ -4,9 +4,13 @@ module algebra
     implicit none 
     private
 
-    public :: gcd       ! --- Greatest Common Divisor
-    public :: lcm       ! --- Least Common Multiple
-    public :: factors   ! --- Factors of a number
+    ! --- Calculus
+    public :: gcd            ! --- Greatest Common Divisor
+    public :: lcm            ! --- Least Common Multiple
+    public :: factors        ! --- Factors of a number
+    ! --- Primes
+    public :: trial_division ! --- Prime factors by trial division method
+
     
     contains
     
@@ -24,7 +28,6 @@ module algebra
             tb = mod(ta, tb)
             ta = gcd
         end do 
-        ! --- end 
     end function gcd 
     
     function lcm( a, b )
@@ -57,5 +60,30 @@ module algebra
             i = i + 1
         end do 
     end subroutine factors
+
+    subroutine trial_division( n, m, s )
+        implicit none
+        ! --- variables
+        integer, intent(in) :: n
+        integer, dimension(:), intent(out) :: m
+        integer, intent(out) :: s
+        integer :: f, i, a
+        ! --- initialisation
+        a = n
+        f = 2
+        i = 1
+        s = 0
+        ! --- processing
+        do while ( a > 1 )
+            if (mod(a,f) == 0) then
+                m(i) = f
+                a = a / f
+                s = i
+                i = i + 1 
+            else 
+                f = f + 1
+            end if 
+        end do 
+    end subroutine trial_division
 
 end module algebra

@@ -1,5 +1,5 @@
 # Author : Nicolas Misbert
-# Date   : 3 Mars 2009
+# Date   : 2009/03/03
 # Source : ENSTA, Paris
 #	Nicolas Kielbasiewics
 FC = gfortran 

@@ -79,21 +79,6 @@ program cgse_multiples_factors
     print *,"Exercise 2.5.a) ", m(1:n), " (ii)"
     print *,"Exercise 2.5.b) ", 1, 3
     print *,"Exercise 2.6.a) "
-    call factors( 15, m, n )
-    print *, m(1:n)
-    call factors( 20, m, n )
-    print *, m(1:n)
-    print *, 1, 5
-    print *, "Exercise 2.6.b) "
-    call factors( 12, m, n )
-    print *, m(1:n)
-    print *, 1, 3
-    print *, "Exercise 2.6.c) "
-    call factors( 30, m, n )
-    print *, m(1:n)
-    call factors( 45, m, n )
-    print *, m(1:n)
-    print *, 1, 3, 5, 10, 15 
     
     contains
 
