@@ -7,11 +7,11 @@ module algebra
     ! --- Calculus
     public :: gcd            ! --- Greatest Common Divisor
     public :: lcm            ! --- Least Common Multiple
-    public :: factors        ! --- Factors of a number
-    ! --- Primes
+    ! --- Factorization
+    public :: euler_factorization ! --- Factors of a number
     public :: trial_division ! --- Prime factors by trial division method
 
-    
+
     contains
     
     function gcd( a, b )
@@ -39,7 +39,7 @@ module algebra
         lcm = abs(a*b) / gcd(a, b)
     end function lcm
 
-    subroutine factors( a, m, n )
+    subroutine euler_factorization( a, m, n )
         implicit none 
         ! --- variables 
         integer, intent(in) :: a
@@ -59,7 +59,7 @@ module algebra
             end if factor
             i = i + 1
         end do 
-    end subroutine factors
+    end subroutine euler_factorization
 
     subroutine trial_division( n, m, s )
         implicit none

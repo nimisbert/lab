@@ -37,35 +37,35 @@ program cgse_multiples_factors
     print *,"Exercise 1.8  ) ", m(1:n)
 
     ! --- Exercise 2, page 6 : Factors
-    call factors( 10, m, n )
+    call euler_factorization( 10, m, n )
     print *,"Exercise 2.1.a) ", m(1:n)
-    call factors( 4, m, n )
+    call euler_factorization( 4, m, n )
     print *,"Exercise 2.1.b) ", m(1:n)
-    call factors( 13, m, n )
+    call euler_factorization( 13, m, n )
     print *,"Exercise 2.1.c) ", m(1:n)
-    call factors( 20, m, n )
+    call euler_factorization( 20, m, n )
     print *,"Exercise 2.1.d) ", m(1:n)
-    call factors( 25, m, n )
+    call euler_factorization( 25, m, n )
     print *,"Exercise 2.1.e) ", m(1:n)
-    call factors( 24, m, n )
+    call euler_factorization( 24, m, n )
     print *,"Exercise 2.1.f) ", m(1:n)
-    call factors( 35, m, n )
+    call euler_factorization( 35, m, n )
     print *,"Exercise 2.1.g) ", m(1:n)
-    call factors( 32, m, n )
+    call euler_factorization( 32, m, n )
     print *,"Exercise 2.1.h) ", m(1:n)
-    call factors( 40, m, n )
+    call euler_factorization( 40, m, n )
     print *,"Exercise 2.1.i) ", m(1:n)
-    call factors( 50, m, n )
+    call euler_factorization( 50, m, n )
     print *,"Exercise 2.1.j) ", m(1:n)
-    call factors( 9, m, n )
+    call euler_factorization( 9, m, n )
     print *,"Exercise 2.1.k) ", m(1:n)
-    call factors( 15, m, n )
+    call euler_factorization( 15, m, n )
     print *,"Exercise 2.1.l) ", m(1:n)
-    call factors( 36, m, n )
+    call euler_factorization( 36, m, n )
     print *,"Exercise 2.1.m) ", m(1:n)
-    call factors( 49, m, n )
+    call euler_factorization( 49, m, n )
     print *,"Exercise 2.1.n) ", m(1:n)
-    call factors( 48, m, n )
+    call euler_factorization( 48, m, n )
     print *,"Exercise 2.1.o) ", m(1:n)
     print *,"Exercise 2.2.a) ", 1
     print *,"Exercise 2.2.b) ", 1, 2
@@ -73,9 +73,9 @@ program cgse_multiples_factors
     print *,"Exercise 2.2.d) ", 1, 10
     print *,"Exercise 2.3  ) ", 3
     print *,"Exercise 2.4  ) ", 1
-    call factors( 15, m, n )
+    call euler_factorization( 15, m, n )
     print *,"Exercise 2.5.a) ", m(1:n), " (i)"
-    call factors( 21, m, n )
+    call euler_factorization( 21, m, n )
     print *,"Exercise 2.5.a) ", m(1:n), " (ii)"
     print *,"Exercise 2.5.b) ", 1, 3
     print *,"Exercise 2.6.a) "
