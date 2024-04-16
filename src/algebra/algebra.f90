@@ -1,16 +1,16 @@
-! --- Author : Nicolas Misbert
-! --- Date   : 26 Mars 2024
+! @brief  : Algebra functions
+! @author : Nicolas Misbert
+! @date   : 26 Mars 2024
 module algebra
     implicit none 
     private
 
     ! --- Calculus
-    public :: gcd            ! --- Greatest Common Divisor
-    public :: lcm            ! --- Least Common Multiple
+    public :: gcd                 ! --- Greatest Common Divisor
+    public :: lcm                 ! --- Least Common Multiple
     ! --- Factorization
     public :: euler_factorization ! --- Factors of a number
-    public :: trial_division ! --- Prime factors by trial division method
-
+    ! --- Primes
 
     contains
     
@@ -39,13 +39,13 @@ module algebra
         lcm = abs(a*b) / gcd(a, b)
     end function lcm
 
-    subroutine euler_factorization( a, m, n )
+    subroutine euler_factorization( a, m, n ) 
         implicit none 
         ! --- variables 
         integer, intent(in) :: a
-        integer, dimension(:), intent(out) :: m
+        integer, intent(out) :: m(:)
         integer, intent(out) :: n
-        integer :: i,j 
+        integer :: i,j
         ! --- initialisation
         n = 0
         i = 1
@@ -60,30 +60,5 @@ module algebra
             i = i + 1
         end do 
     end subroutine euler_factorization
-
-    subroutine trial_division( n, m, s )
-        implicit none
-        ! --- variables
-        integer, intent(in) :: n
-        integer, dimension(:), intent(out) :: m
-        integer, intent(out) :: s
-        integer :: f, i, a
-        ! --- initialisation
-        a = n
-        f = 2
-        i = 1
-        s = 0
-        ! --- processing
-        do while ( a > 1 )
-            if (mod(a,f) == 0) then
-                m(i) = f
-                a = a / f
-                s = i
-                i = i + 1 
-            else 
-                f = f + 1
-            end if 
-        end do 
-    end subroutine trial_division
 
 end module algebra
