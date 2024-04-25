@@ -1,4 +1,4 @@
-# Author : Nicolas Misbert
+# Author : Nicolas Kielbasiewics
 # Date   : 2009/03/03
 # Source : ENSTA, Paris
 #	Nicolas Kielbasiewics

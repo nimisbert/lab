@@ -4,7 +4,7 @@
 program cgse_multiples_factors
     use algebra
     implicit none 
-    integer :: i, n, s
+    integer :: i, n
     integer, dimension(64) :: m
     
     ! --- Exercise 1, page 6 : Multiples
