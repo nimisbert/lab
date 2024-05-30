@@ -25,3 +25,7 @@ cabal.project.local~
 .ghc.environment.*
 **/.DS_Store
 .vscode
+*.pdf
+*.log 
+*.thm
+*.toc
