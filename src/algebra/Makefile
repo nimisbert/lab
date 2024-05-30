@@ -1,7 +1,7 @@
-# Author : Nicolas Kielbasiewics
-# Date   : 2009/03/03
-# Source : ENSTA, Paris
-#	Nicolas Kielbasiewics
+# @brief  : Compilation Fortran
+# @author : Nicolas Kielbasiewics
+# @date   : 2009/03/03
+# @source : ENSTA, Paris
 FC = gfortran 
 FFLAGS = 
 LDFLAGS =
