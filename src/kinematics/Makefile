@@ -6,9 +6,7 @@ FC = gfortran
 FFLAGS = 
 LDFLAGS =
 
-SRCS = cgse_calculations.f90 \
-	   cgse_multiples_factors.f90
-
+SRCS =
 OBJS = $(SRCS:.f90=.o)
 EXEC = $(SRCS:.f90=)
 
@@ -19,8 +17,6 @@ all: $(EXEC)
 
 %: %.o 
 	$(FC) $(LDFLAGS) -o $@ $^
-
-cgse_multiples_factors: algebra.o
 
 clean:
 	rm -rf *.o *.mod *.out $(OBJS) $(EXEC) *.dat

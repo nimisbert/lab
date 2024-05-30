@@ -1,4 +1,4 @@
-! @brief   : Particle moving in a circle
+! @brief   : Particle moving in a circle in a 2D Plane
 ! @author  : Konstantinos N. Anagnostopoulos 
 ! @date    : 2014
 ! @sources : Computational Physics 
