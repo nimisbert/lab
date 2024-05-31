@@ -1,19 +1,12 @@
 # mathematics
-1. [algebra](#algebra)
-2. [linalg](#linalg)
 
-## Algebra <a name="algebra"></a>
-> Greatest Common Divisor of a & b
-> - $c = gcd(a,b)$
-> - $o(log(min(a,b)))$
+1. [Dependencies](#deps)
+2. [Sources](#srcs)
 
-> Least Common Multiple of a, b, c...
-> - $c = lcm(a,b)$
-> - $d = lcm(a,lcm(b,c))$
-> - $o(log(min(a,b)))$
+## 1 - Dependencies <a name="deps"></a>
+- gnuplot
+- fortran
+- makefile
 
-> Factors of a
-> - $[n] = factors(a)$
-> - $o(a)$
-
-## Linear Algebra <a name="linalg"></a>
+## 2 - Sources <a name="srcs"></a>
+- cgse 
