@@ -15,8 +15,8 @@ all: $(EXEC)
 %.o: %.f90
 	$(FC) $(FFLAGS) -c $< 
 
-%: %.o 
+%.out: %.o 
 	$(FC) $(LDFLAGS) -o $@ $^
 
 clean:
-	rm -rf *.o *.mod *.out $(OBJS) $(EXEC) *.dat
+	rm -rf *.o *.mod *.out $(OBJS) $(EXEC) *.dat *.gif *.png
