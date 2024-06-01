@@ -11,5 +11,6 @@ set output "model_plot.png"
 ### Title & label
 set title "Model tutor"
 
-plot   "projectile.dat" u 1:3 w l t "y(t)"
-replot "projectile.dat" u 1:2 w l t "x(t)"
+plot "projectile.dat" u 1:3 w l t "y(t)"
+plot "projectile.dat" u 1:2 w l t "x(t)"
+
