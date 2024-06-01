@@ -29,3 +29,6 @@ cabal.project.local~
 *.log 
 *.thm
 *.toc
+*.exe
+*.png
+*.gif
