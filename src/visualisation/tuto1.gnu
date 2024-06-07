@@ -16,4 +16,3 @@ set grid
 
 # plot [-3*pi:3*pi] [-1.5:1.5] sin(x) linetype 7 linecolor 0 with linespoints
 plot [-3*pi:3*pi] [-1.5:1.5] sin(x) lt 7 lc 0 w lp, cos(x) lt 7 lc 0
-

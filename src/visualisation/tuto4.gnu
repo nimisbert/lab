@@ -1,5 +1,5 @@
 # @brief Animate plots
-# date 2024
+# @date 2024
 
 reset 
 set termopt enhanced
