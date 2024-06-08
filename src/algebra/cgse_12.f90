@@ -90,7 +90,19 @@ program cgse_multiples_factors
     call euler_factorization( 15, m, n )
     print *," factors of 15 :", m(1:n)
     print *," common factors:", 1, 3
-
+    print *,"Exercise 2.6.C) "
+    call euler_factorization( 30, m, n )
+    print *," factors of 30 :", m(1:n)
+    call euler_factorization( 45, m, n )
+    print *," factors of 45 :", m(1:n)
+    print *," common factors:", 1, 3, 5, 15
+    print *,"Exercise 2.6.d)"
+    call euler_factorization( 50, m, n )
+    print *," factors of 50 :", m(1:n)
+    call euler_factorization( 90, m, n )
+    print *," factors of 90 :", m(1:n)
+    print *," common factors:", 1, 2, 5, 10
+    
     contains
 
     subroutine multiples( p, lb, ub, m, n )
