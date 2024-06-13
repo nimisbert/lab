@@ -32,3 +32,6 @@ cabal.project.local~
 *.exe
 *.png
 *.gif
+*.dat
+*.swp
+*.png
