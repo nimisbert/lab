@@ -3,7 +3,7 @@
 # @date   : 2009/03/03
 # @source : ENSTA, Paris
 FC = gfortran 
-FFLAGS = 
+FFLAGS = -fdec-structure
 LDFLAGS =
 VPATH = src
 SRCS =

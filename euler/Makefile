@@ -5,10 +5,8 @@
 FC = gfortran 
 FFLAGS = 
 LDFLAGS =
-
-SRCS = cgse_11.f90 \
-	   cgse_12.f90
-
+VPATH = src
+SRCS =
 OBJS = $(SRCS:.f90=.o)
 EXEC = $(SRCS:.f90=)
 
@@ -20,7 +18,5 @@ all: $(EXEC)
 %: %.o 
 	$(FC) $(LDFLAGS) -o $@ $^
 
-cgse_12: algebra.o
-
 clean:
-	rm -rf *.o *.mod *.out $(OBJS) $(EXEC)
+	rm -rf *.o *.mod *.out $(OBJS) $(EXEC) problem*

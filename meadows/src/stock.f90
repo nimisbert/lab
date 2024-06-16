@@ -1,5 +1,5 @@
 ! Donella Meadows - Thinking In Systems
-! Figure 6:. How to read stock-and-flow diagrams
+! Figure 6. How to read stock-and-flow diagrams
 program main 
     implicit none 
     real :: inflow
