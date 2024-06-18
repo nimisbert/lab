@@ -18,4 +18,8 @@ Example:
 ### Content 
 - stock : figure 6 page 20
 - dynamic equilibrium : figure 7 page 21
+- balancing : figure 11 page 29
+- reinforcing : figure 13 page 32
+- room temperature : figure 18 page 38
+- heat loss : figure 20 page 41
 

@@ -15,7 +15,7 @@ program main
     tf = 24.0
     temperature = 10.0
     furnace%command = 18.0
-    outside%command = 10.0
+    outside%command = 5*cos(0.0)
     furnace%delta = temperature - furnace%command
     outside%delta = temperature - outside%command
     furnace%flow = furnace%delta * dt
