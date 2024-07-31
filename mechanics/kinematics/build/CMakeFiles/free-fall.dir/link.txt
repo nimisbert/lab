@@ -1,0 +1,1 @@
+/usr/bin/f95  -std=f95 "CMakeFiles/free-fall.dir/src/free-fall.f90.o" -o free-fall  libKinematics.a 
