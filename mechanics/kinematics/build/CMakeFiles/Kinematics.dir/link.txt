@@ -1,2 +1,0 @@
-/usr/bin/ar qc libKinematics.a CMakeFiles/Kinematics.dir/modules/suvat.f90.o
-/usr/bin/ranlib libKinematics.a

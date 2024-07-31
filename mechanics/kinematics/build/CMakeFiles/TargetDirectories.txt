@@ -1,4 +1,0 @@
-/home/nicolas/Workspace/mathematics/mechanics/kinematics/build/CMakeFiles/Kinematics.dir
-/home/nicolas/Workspace/mathematics/mechanics/kinematics/build/CMakeFiles/free-fall.dir
-/home/nicolas/Workspace/mathematics/mechanics/kinematics/build/CMakeFiles/edit_cache.dir
-/home/nicolas/Workspace/mathematics/mechanics/kinematics/build/CMakeFiles/rebuild_cache.dir
