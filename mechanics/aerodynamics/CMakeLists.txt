@@ -21,6 +21,7 @@ set( MAIN_0  test-conversions )
 
 # Build instructions
 add_library( ${MODULES} STATIC 
-    modules/UnitConversions.f90 )
+    modules/UnitConversions.f90 
+    modules/EnergyManeuverability.f90 )
 add_executable( ${MAIN_0} src/${MAIN_0}.f90)
 target_link_libraries( ${MAIN_0} LINK_PUBLIC ${MODULES} )

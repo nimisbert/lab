@@ -2,20 +2,39 @@
 ! @source Aeroddynamics for engineers
 ! @brief unit conversions between
 !        standard international units (si)
-!        english/united-states units (en)
+!        english/united-states units (us)
 module UnitConversions
     implicit none
-    public :: length_m_to_ft
-    public :: length_m_to_in
+
+    public :: meterToFeet
+    public :: meterToInch
+    public :: kilometerToMile
+    public :: kilometerToYard
+
 contains
-    function length_m_to_ft( l_si ) result( l_ft )
-        real, intent(in) :: l_si
-        real             :: l_ft
-        l_ft = l_si * 3.2808
+    
+    function meterToFeet( si ) result( us )
+        real, intent(in) :: si
+        real             :: us
+        us = si * 3.2808
     end function
-    function length_m_to_in( l_si ) result( l_in )
-        real, intent(in) :: l_si
-        real             :: l_in
-        l_in = l_si * 39.37
+    
+    function meterToInch( si ) result( us )
+        real, intent(in) :: si
+        real             :: us
+        us = si * 39.37
+    end function
+
+    function kilometerToMile( si ) result( us )
+        real, intent(in) :: si
+        real             :: us
+        us = si * 0.6214
     end function 
+
+    function kilometerToYard( si ) result( us )
+        real, intent(in) :: si
+        real             :: us
+        us = si * 1093.6
+    end function 
+
 end module 
