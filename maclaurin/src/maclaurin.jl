@@ -7,7 +7,6 @@ export log1p
 export sin, cos
 # Hyperbolic
 export sinh, cosh
-
 """
 Maclaurin serie for the exponential approximation.
 """
