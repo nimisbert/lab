@@ -36,3 +36,4 @@ cabal.project.local~
 *.swp
 *.png
 **/build
+**/data
