@@ -10,4 +10,4 @@ set xlabel "minutes"
 set ylabel "gallons"
 set title "Stock of water in the tub"
 
-plot [0:10][0:50] "dat/stock.dat" using 1:2 with lines
+plot [0:10][0:50] "data/fig-6.dat" using 1:2 with lines
