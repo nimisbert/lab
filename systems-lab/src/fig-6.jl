@@ -17,7 +17,7 @@ let t=0.0, dt=1.0, tf=10.0
     # Running the model
     while(t <= tf)
         println(t, " ", stock.s)
-        stock.s = stock.s - (stock.o - stock.i)*dt
+        stock.s = stock.s + (stock.i - stock.o)*dt
         t = t + dt
     end
 end

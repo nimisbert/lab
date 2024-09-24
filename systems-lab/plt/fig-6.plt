@@ -3,7 +3,7 @@
 reset 
 set termopt enhanced
 set terminal pngcairo size 800,600
-set output "plot.png"
+set output "build/fig-6.png"
 unset key
 
 set xlabel "minutes"
