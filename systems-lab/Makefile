@@ -1,22 +1,23 @@
-# @brief  : Compilation Fortran
-# @author : Nicolas Kielbasiewics
-# @date   : 2009/03/03
-# @source : ENSTA, Paris
-FC = gfortran 
-FFLAGS = -fdec-structure
-LDFLAGS =
-VPATH = src
-SRCS =
-OBJS = $(SRCS:.f90=.o)
-EXEC = $(SRCS:.f90=)
+# @brief System-Dynamics Makefile
 
-all: $(EXEC)
+# Toolchain
+JL=julia
+GPLT=gnuplot
 
-%.o: %.f90
-	$(FC) $(FFLAGS) -c $< 
+# Folders
+BUILD=build
+SRC=src
+PLOT=plt
+vpath %.jl $(WORKDIR)$(SRC) $(WORKDIR)$(PLOT)
 
-%.out: %.o 
-	$(FC) $(LDFLAGS) -o $@ $^
+# Examples
+
+# Rules
+%.dat: %.jl
+	$(JL) $< > $(BUILD)/$@
+
+%.png: %.plt
+	$(GPLT) $< > $(BUILD)/$@
 
 clean:
-	rm -rf *.o *.mod *.out *.png $(OBJS) $(EXEC)
+	rm -rf *.png
