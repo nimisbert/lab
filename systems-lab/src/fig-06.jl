@@ -1,6 +1,5 @@
 # @source: Thinking In Systems - Donella Meadows
 # @brief: Figure 6. How to read a stock-and-flow diagrams
-using DelimitedFiles
 
 mutable struct Stock
     s::Float32 # Stock
