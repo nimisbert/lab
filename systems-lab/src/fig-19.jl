@@ -34,7 +34,7 @@ let t = 0.0, dt=.1, tf=24.0
     room30 = Stock( 10, heat, leak ) # 30% leakage parameter
 
     # Running the models 
-    while(t <= tf) 
+    while(t < tf) 
         W = weather(t)
         println(t, " ", T, " ", W, " ", room10.s, " ", room30.s)
         flow10 = room10.fi(T, room10.s) + room10.fo(W, room10.s, 10)
