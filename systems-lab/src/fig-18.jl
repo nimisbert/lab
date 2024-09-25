@@ -11,27 +11,35 @@ end
 # @param T thermostat setting
 # @param s room temperature
 function heat( T, s )
-    return T - s
+    if T > s
+        return T - s
+    else
+        return 0.0
+    end 
 end
 
 # @brief Leaking of temperature to the outside
 # @param T outside temperature
 # @param s room temperature
-function leak( T, s )
-    return 0.0
+# @param p leakage percentage
+function leak( T, s, p )
+    return (T - s) * (p / 100)
 end
 
-let t=0.0, dt=.1, tf=24.0
+# Global variables
+let t=0.0, dt=.1, tf=24.0 
     
     # Initialisation 
-    thermosT = 18.0
+    thermosT = 18.0 # Thermostat settings
+    outsideT = 10.0 # Outside temperature
     room = Stock( 10.0, heat, leak )
     
     # Running the models
     while(t <= tf)
         println(t, " ", room.s)
-        # Outside leakage is not considered
-        room.s = room.s+ room.fi(thermosT,room.s) * dt 
-        t = t+dt
+        # Sum of flows (outflow function already returns negative values)
+        flow = room.fi(thermosT, room.s) + room.fo(outsideT, room.s, 10) 
+        room.s = room.s + flow * dt 
+        t = t + dt
     end
 end
