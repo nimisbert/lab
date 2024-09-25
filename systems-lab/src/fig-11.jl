@@ -10,7 +10,7 @@ mutable struct Stock
 end
 
 function dT( thermostat, s )
-    return (thermostat - s)/2
+    return (thermostat - s)*0.1
 end
 
 let t=0.0, dt=0.1, tf=8*60
