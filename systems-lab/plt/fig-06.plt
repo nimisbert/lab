@@ -3,11 +3,11 @@
 reset 
 set termopt enhanced
 set terminal pngcairo size 800,600
-set output "build/fig-6.png"
+set output "./build/fig-06.png"
 unset key
 
 set xlabel "minutes"
 set ylabel "gallons"
 set title "Stock of water in the tub"
 
-plot [0:10][0:50] "build/fig-6.dat" using 1:2 with lines
+plot [0:10][0:50] "build/fig-06.dat" using 1:2 with lines
