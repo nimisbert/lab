@@ -15,7 +15,7 @@ end
 let t=2000, dt=1, tf=2110
     
     # Initialisation
-    pop = Stock(6600000, births)
+    pop = Stock(6.6, births)
 
     # Running the models
     while(t < tf)
