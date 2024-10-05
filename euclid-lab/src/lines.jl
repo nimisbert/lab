@@ -1,7 +1,6 @@
-using Elements
+using Line
 
-l0 = Line( [Point(0,0), Point(1,1)] )
-l1 = Line( [Point(0,0), Point(1,0)] )
+l0 = Line.make( Point_t(0,0), Point_t(1,0) )
+l1 = Line.make( Point_t(0,0), Point_t(1,1) )
 
-println(l0.p[1].x, " ", l0.p[1].y, " ", l0.p[2].x, " ", l0.p[2].y)
-println(l1.p[1].x, " ", l1.p[1].y, " ", l1.p[2].x, " ", l1.p[2].y)
+Line.draw( [l0,l1] )

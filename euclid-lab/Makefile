@@ -1,10 +1,22 @@
-JULIA=julia
-GNUPLOT=gnuplot
 
-points:
-	$(JL) ./src/points.jl > ./build/points.dat
-	$(GNUPLOT) ./plt/points.plt
+# Toolchain
+JL=julia
+GP=gnuplot
 
-lines: 
-	$(JL) ./src/lines.jl > ./build/lines.dat
-	$(GNUPLOT) ./plt/lines.plt
+# Folders
+SRC=src
+BUILD=build
+PLOT=plt
+P=Proposition
+
+$(P)-1: $(BUILD)/$(P)-1.dat $(BUILD)/$(P)-1.png
+
+# Rules
+$(BUILD)/%.dat: $(SRC)/%.jl
+	$(JL) $< > $@
+
+$(BUILD)/%.png: $(PLOT)/%.plt
+	$(GP) $< 
+
+clean:
+	rm -rf *.png $(BUILD)/*
