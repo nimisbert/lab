@@ -19,4 +19,8 @@ function draw( l::Array{Line_t,1} )
     println("\r\n")
 end
 
+function length( l::Line_t )
+    return sqrt( (l.p[1].x-l.p[2].x)^2 + (l.p[1].y-l.p[2].y)^2 )
+end
+
 end

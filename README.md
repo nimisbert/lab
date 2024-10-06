@@ -1,5 +1,7 @@
 # Projects
 
-- [euler-lab](./euler-lab), Euler Projects Problems
-- [os-lab](./os-lab), Operating Systems inner workings
-- [systems-lab](./systems-lab), System Dynamics book reading and exercices
+- IN0: Assembleur
+- MA0: Fondamentaux, ICSGE
+- MA1: Calculs, Stewart
+- MA2: Probèmes, projet Euler
+- MA3: Dynamique des systèmes, Meadows
