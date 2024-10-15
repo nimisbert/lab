@@ -13,3 +13,6 @@ debug:
 
 run: main.out
 	$(QM) $(VERSION) main.out
+
+clean:
+	rm *.o *.out
