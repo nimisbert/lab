@@ -1,8 +1,18 @@
-.section .text      // text directive
-.global _start      // create an entry point for program
+.section .text
+.global _start
 
-_start:             // entry point label
-    mov r0, pc
-    mov r1, #2
-    add r2, r1, r1
-    bkpt
+_start:
+/* syscall write(int fd, const void *buf, size_t count) */
+    mov x0, #1   /* fd := stdout                        */
+    ldr x1, =msg /* buf := msg                          */
+    ldr x2, =len /* count := len                        */
+    mov w8, #64  /* write is syscall #64                */
+    svc #0       /* invoke syscall                      */
+/* syscall exit(int status)                             */
+    mov x0, #0   /* status := 0                         */
+    mov w8, #93  /* exit is syscall #93                 */
+    svc #0       /* invoke syscall                      */
+
+msg:
+    .ascii "Hello, World!\r\n"
+    len = . - msg
